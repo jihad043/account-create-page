@@ -1,7 +1,7 @@
 from django.shortcuts import render , redirect
 from django.contrib import messages
 from .forms import *
-from .forms import RegForm
+
 # Create your views here.
 
     
@@ -16,7 +16,7 @@ def singin(request):
             
             
             messages.success(request, "user creat successfully")
-            return redirect()
+            return redirect("singin")
         
        # messages.error(request, "error user creation")
         #return redirect("add-items")
