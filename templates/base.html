@@ -2,22 +2,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{% block title %}  {% endblock %}</title>
-<!--<link rel="stylesheet" href="{% static '/css/style.css' %}" >
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}My Site{% endblock %}</title>
 
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional custom CSS -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
-<body>
- 
 
-   {% block content %}
+<body class="bg-gray-100 text-gray-800">
 
-   {% endblock %}
- 
- 
+  {% block content %}
+  {% endblock %}
 
 </body>
-
 </html>
